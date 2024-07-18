@@ -40,5 +40,7 @@ fun main() {
     val shapes: MutableList<String> = mutableListOf("triangle", "square", "circle")
     println(shapes)
 
-    
+    for (readOnlyShape in shapes) {
+        println("That's a $readOnlyShape")
+    }
 }
