@@ -1,11 +1,13 @@
 fun main() {
     println("Hello World!")
 
+    // Cannot be changed
     val name = "Mary"
     val age = 20
 
     println("$name is $age years old")
 
+    // Can be changed
     var customers = 10
 
     customers = 8
@@ -43,4 +45,17 @@ fun main() {
     for (readOnlyShape in shapes) {
         println("That's a $readOnlyShape")
     }
+
+    println("Enter an integer: ")
+    var animal = readLine()!!;
+
+    val result = when (animal.toInt()) {
+        1 -> "Dog"
+        2 -> "Cat"
+        3 -> "Bird"
+        4 -> "Lizard"
+        5 -> "Hamster"
+        else -> "Not an animal"
+    }
+    println(result)
 }
